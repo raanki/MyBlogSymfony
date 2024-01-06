@@ -1,0 +1,23 @@
+<div class="comment mb-3" id="comment{{ comment.id }}">
+
+    <div class="card">
+
+        <div class="card-body">
+
+            <h5 class="card-title">
+
+                <a href="" class="text-decoration-none">
+
+                    <span class="comment-author">{{ comment.user.username ?? 'Anonyme' }}</span>
+
+                </a> {{ comment.createdAt|date('d M Y à H:i:s') }}
+
+                <p class="card-text">{{ comment.content }}</p>
+
+            </h5>
+
+        </div>
+
+    </div>
+
+</div>
